@@ -4,8 +4,6 @@ export function middleware(req) {
   const token = req.cookies.get("user_token")?.value; // Correct way to get cookies in middleware
   const { pathname } = req.nextUrl;
 
-  console.log("Token:", token); // Debugging
-
   if (!token) {
     if (pathname !== "/login" && pathname !== "/signup") {
       return NextResponse.redirect(new URL("/login", req.url));
