@@ -1,0 +1,130 @@
+
+a
+  text-decoration: none !important
+
+
+.img-30
+  width: 30px
+  height: 30px
+
+.img-40
+  width: 40px
+  height: 40px
+
+.img-25
+  width: 25px
+  height: 25px
+
+.img-20
+  width: 20px
+  height: 20px
+
+.img-15
+  width: 15px
+  height: 15px
+
+.pagination
+  display: flex
+  gap: 8px
+  align-items: center
+  justify-content: center
+  margin-top: 16px
+
+  .pagination-btn
+    border: 1px solid $textGrey
+    border-radius: 50%
+    width: 32px
+    height: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: transparent
+    color: $textGrey
+    cursor: pointer
+    font-size: 14px
+    transition: background-color 0.3s ease, color 0.3s ease
+
+    &:hover
+      background-color: lighten($textGrey, 20%)
+
+    &.active
+      background-color: $dark-gray
+      color: white
+      border-color: $dark-gray
+
+    &:disabled
+      opacity: 0.5
+      cursor: not-allowed
+
+  .pagination-ellipsis
+    color: $textGrey
+    font-size: 14px
+    margin: 0 4px
+
+
+.full-screen-loader,
+.initial-loading
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(78, 78, 78, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1050
+
+  .custom-spinner
+    width: 60px
+    height: 60px
+    border: 8px solid transparent
+    border-top: 8px solid $primaryColor
+    border-right: 8px solid $primaryColor
+    border-radius: 50%
+    animation: spin 1s linear infinite
+
+  @keyframes spin
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
+
+.initial-loading
+  background-color: $primaryColor
+  .custom-spinner
+    width: 80px
+    height: 80px
+    border: 10px solid transparent
+    border-top: 10px solid $white
+    border-right: 10px solid $white
+
+.form-control
+  border-radius: 8px
+  height: 45px
+  background-color: #F3F3F3
+
+table
+  th, td
+    vertical-align: middle !important
+    text-align: center
+
+.w-20
+  width: 20%
+
+.w-30
+  width: 30%
+
+.tint-white
+  filter: invert(1) opacity(0.7)
+
+.tint-gray
+  filter: invert(0.3)
+
+.post-per-page
+  position: absolute
+  left: 0
+  top: 5px
+
+.cursor-pointer
+  cursor: pointer

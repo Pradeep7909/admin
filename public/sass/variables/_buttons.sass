@@ -1,0 +1,102 @@
+.btn
+  border: $primaryColor !important
+  color: #fff
+  height: 40px
+  background-color: $primaryColor !important
+  font-weight: 600
+  border-radius: 2px
+  padding: 0 15px
+  font-size: 1rem
+  transition: .3s
+  box-shadow: unset !important
+
+  &:hover
+    color: #fff
+    background-color: darken($primaryColor, 10%) !important
+
+  &:focus
+    text-decoration: none
+
+.btn-danger
+  border: $dangerColor !important
+  color: #fff
+  height: 40px
+  background-color: $dangerColor !important
+  font-weight: 600
+  border-radius: 2px
+  padding: 0 15px
+  font-size: 1rem
+  transition: .3s
+  box-shadow: unset !important
+
+  &:hover
+    color: #fff
+    background-color: darken($dangerColor, 10%) !important
+
+  &:focus
+    text-decoration: none
+
+.btn-cancel
+  border: #6c757d !important  // Gray border
+  color: #fff
+  height: 40px
+  background-color: #6c757d !important  // Gray background
+  font-weight: 600
+  border-radius: 2px
+  padding: 0 15px
+  font-size: 1rem
+  transition: .3s
+  box-shadow: unset !important
+
+  &:hover
+    color: #fff
+    background-color: darken(#6c757d, 10%) !important // Darker gray on hover
+
+  &:focus
+    text-decoration: none
+
+.btn-success
+  border: $green !important  // Gray border
+  color: #fff
+  height: 40px
+  background-color: $green !important  // Gray background
+  font-weight: 600
+  border-radius: 2px
+  padding: 0 15px
+  font-size: 1rem
+  transition: .3s
+  box-shadow: unset !important
+
+  &:hover
+    color: #fff
+    background-color: darken($green , 10%) !important // Darker gray on hover
+
+  &:focus
+    text-decoration: none
+
+.filter-btn
+  border-radius: 50px
+  background-color: white
+  min-width: 80px
+  height: 35px
+  border: 1px solid #ccc
+  transition: background-color 0.3s ease
+
+  &.active
+    background-color: $textGrey
+    color: white
+    border-color: $textGrey
+
+    &:hover
+      background-color: $textGrey
+
+  &:hover
+    background-color: $borderColor
+
+
+.eye-button
+  all: unset
+  position: absolute
+  right: 0
+  top: 10px
+  padding-right: 10px

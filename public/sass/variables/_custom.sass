@@ -1,0 +1,234 @@
+.dashboard
+  .count-title
+    background-color: #A079FC
+    text-align: center
+    color: white
+    width: 180px
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+    padding: 10px
+    border-radius: 8px
+    margin: 0 auto
+
+  .chart-container
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 250px
+
+  .custom-legend
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: column
+
+  .legend-item
+    display: flex
+    align-items: center
+    margin-bottom: 8px
+
+  .legend-color
+    display: inline-block
+    width: 12px
+    height: 12px
+    border-radius: 50%
+
+
+.content
+  .search-input
+    width: 250px
+    border-radius: 10px
+    border: 1px solid #ccc
+    padding: 8px 12px
+    font-size: 14px
+    margin-right: 100px
+
+  .post-container
+    .post-view
+      width: 150px
+      border-radius: 5px
+      overflow: hidden
+      border: 1px solid #ccc
+
+      .post-img
+        width: 100%
+        aspect-ratio: 1
+        object-fit: cover
+
+      h6
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        font-size: 14px
+
+      p
+        font-size: 12px
+        color: #555
+
+/* Custom styles for category and subcategory images */
+.category
+  .category-image, .subcategory-image
+    border-radius: 8px
+    overflow: hidden
+    border: 0.5px solid $light-gray
+    object-fit: cover
+
+  .category-image
+    width: 80px
+    height: 80px
+
+  .subcategory-image
+    width: 60px
+    height: 60px
+
+
+  /* Custom styles for the table */
+  .table-striped tbody tr
+    &:nth-of-type(odd)
+      background-color: rgba(0, 123, 255, 0.05)
+
+    &:hover
+      background-color: rgba(0, 123, 255, 0.1)
+
+
+.post-details
+  .detail
+    font-size: 16px
+    font-weight: 500
+    strong
+      color: $pink
+
+  .post-image
+    max-height: 400px
+    width: 100%
+    object-fit: cover
+    border-radius: 10px
+
+  .member-avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-right: 10px
+
+  .image-wrapper
+    position: relative
+    .btn-prev, .btn-next
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background: rgba(136, 136, 136, 0.5)
+      color: white
+      border: none
+      cursor: pointer
+      border-radius: 50%
+      height: 35px
+      width: 35px
+    .btn-prev
+      left: 10px
+    .btn-next
+      right: 10px
+
+  .shadow
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+  .list-unstyled
+    list-style: none
+    padding: 0
+
+.reports
+  .detail
+    max-width: 280px
+
+.users
+  .search-input
+    width: 250px
+    border-radius: 10px
+    border: 1px solid #ccc
+    padding: 8px 12px
+    font-size: 14px
+    margin-right: 100px
+
+.user-details
+  .detail
+    font-size: 16px
+    font-weight: 500
+    strong
+      color: $pink
+
+.category-data
+  .category-box
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+    gap: 20px
+    background-color: #f9fbd9
+    padding: 15px
+    border-radius: 8px
+    border: 1px solid #000
+    margin: auto
+
+.settings
+  .scroll-container
+      width: 100%
+      max-width: 500px
+      border: 2px solid #9a9a9a
+      border-radius: 5px
+      overflow: hidden
+      padding: 10px
+
+  .list-header
+    background: #FFDBB2
+    font-weight: bold
+    padding: 8px 20px
+    border-bottom: 1px solid #ddd
+    border-radius: 5px
+    margin-bottom: 5px
+
+  .scrollable-list
+    height: calc(50vh - 200px)
+    min-height: 200px
+    max-height: 400px
+    overflow-y: auto
+    padding-top: 5px
+
+    a
+      display: block
+      background-color: #e6e6e6
+      padding: 5px 12px
+      margin-bottom: 5px
+      border-radius: 5px
+      text-decoration: none
+      color: #000
+      transition: background 0.3s
+
+      &:hover
+        background-color: #bcbcbc
+
+  .profile-pic
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    object-fit: cover
+    border: 2px solid #ddd
+
+  .admin-profile
+    max-width: 500px
+    position: relative
+
+    .logout-btn
+      position: absolute
+      top: 10px
+      right: 10px
+      padding: 5px 10px
+
+    .profile-info
+      .profile-field
+        background: #F8F3F3
+        padding: 8px 12px
+        border-radius: 5px
+        border: 1px solid #ccc
+        color: #333
+        margin-bottom: 10px
+
+    .btn
+      flex: 1
+      margin: 5px
