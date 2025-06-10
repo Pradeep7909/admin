@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function _middleware(req) {
+export function middleware(req) {
   const token = req.cookies.get("user_token")?.value; // Correct way to get cookies in middleware
   const { pathname } = req.nextUrl;
 
